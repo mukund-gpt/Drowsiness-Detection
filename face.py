@@ -61,8 +61,6 @@ cv2.waitKey(0)
 insert_person_data("Elon Musk", encode1)
 insert_person_data("Elon Musk", encode2)
 
-
-
-cursor.execute("SELECT * FROM user")
-print(cursor.fetchall())
+# cursor.execute("SELECT * FROM user")
+# print(cursor.fetchall())
 conn.close()
