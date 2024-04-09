@@ -153,6 +153,7 @@ def update_frame():
     global indexImg
     
     ret, frame = cap.read()
+    image = cv2.flip(image, 1)
     
     imgBG = cv2.resize(imgList[indexImg], (frame.shape[1], frame.shape[0]))
     frame = segmentor.removeBG(frame, frame)
